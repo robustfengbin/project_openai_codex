@@ -80,6 +80,7 @@ const handleSubmit = async (e) => {
     // to focus scroll to the bottom 
     chatContainer.scrollTop = chatContainer.scrollHeight;
 
+    
     // specific message div 
     const messageDiv = document.getElementById(uniqueId)
 
