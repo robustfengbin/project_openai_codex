@@ -102,7 +102,7 @@ const handleSubmit = async (e) => {
     messageDiv.innerHTML = " "
 
     console.info("response:", response)
-    let response_json = response.json
+    let response_json = response.json()
     console.info("response_json:", response_json)
 
     let code = response_json.code
