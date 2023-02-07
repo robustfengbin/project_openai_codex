@@ -15,7 +15,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const app = express()
-app.use(cors())
+// app.use(cors())
 
 // app.use(function (req, res, next) {
 //   res.header("Access-Control-Allow-Origin", "*")
