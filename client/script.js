@@ -103,6 +103,7 @@ const handleSubmit = async (e) => {
 
     console.info("response:", response)
     let response_json = response.json
+    console.info("response_json:", response_json)
 
     let code = response_json.code
     console.info("code:", code)
