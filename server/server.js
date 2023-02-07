@@ -86,4 +86,4 @@ app.post('/generate_img', async (req, res) => {
 })
 
 
-app.listen(3000, () => console.log('AI server started on http://localhost:3000'))
+app.listen(3001, () => console.log('AI server started on http://localhost:3001'))
