@@ -87,7 +87,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://gpt.fastaitop.com/api', {
+    const response = await fetch('https://gpt.fastaitop.com/api/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
