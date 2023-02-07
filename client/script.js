@@ -103,9 +103,9 @@ const handleSubmit = async (e) => {
 
     console.info("response:", response)
 
-    if (response.ok) {
-        const data = await response.json();
-        const parsedData = data.bot.trim() // trims any trailing spaces/'\n' 
+    if (response.code == 200) {
+        const data = response.data();
+        const parsedData = data.text.trim() // trims any trailing spaces/'\n' 
 
         typeText(messageDiv, parsedData)
     } else {
