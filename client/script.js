@@ -106,20 +106,14 @@ const handleSubmit = async (e) => {
     console.info("response_json:", response_json)
 
     let code = response_json.code
-    console.info("code:", code)
     let response_data = response_json.data
-    console.info("response_data:", response_data)
     let text = response_data.text
-    console.info("text:", text)
 
 
 
 
-    if (response.status == 200) {
-        const data = response.data();
-        console.info("data:", data)
-        const parsedData = data.text.trim() // trims any trailing spaces/'\n' 
-
+    if (code == 200) {
+        const parsedData = text.trim() // trims any trailing spaces/'\n' 
         typeText(messageDiv, parsedData)
     } else {
         const err = await response.text()
