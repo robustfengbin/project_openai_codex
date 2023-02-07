@@ -103,6 +103,16 @@ const handleSubmit = async (e) => {
 
     console.info("response:", response)
 
+    let code = response.code
+    console.info("code:", code)
+    let response_data = response.data
+    console.info("response_data:", response_data)
+    let text = response_data.text
+    console.info("text:", text)
+
+
+
+
     if (response.status == 200) {
         const data = response.data();
         console.info("data:", data)
