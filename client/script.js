@@ -87,7 +87,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://gpt.fastaitop.com/api/', {
+    const response = await fetch('https://chat.fastaitop.com/api/api/v1/gpt/prompt', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -99,6 +99,8 @@ const handleSubmit = async (e) => {
 
     clearInterval(loadInterval)
     messageDiv.innerHTML = " "
+
+    console.info("response:", response)
 
     if (response.ok) {
         const data = await response.json();
