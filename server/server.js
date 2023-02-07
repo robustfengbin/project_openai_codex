@@ -5,7 +5,7 @@ import { Configuration, OpenAIApi } from 'openai'
 
 dotenv.config()
 
-const const_openai_api_key = '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'
+const const_openai_api_key = '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'
 
 const configuration = new Configuration({
   apiKey: const_openai_api_key,
@@ -17,11 +17,11 @@ const openai = new OpenAIApi(configuration);
 const app = express()
 app.use(cors())
 
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*")
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-  next()
-})
+// app.use(function (req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*")
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+//   next()
+// })
 
 app.use(express.json())
 
