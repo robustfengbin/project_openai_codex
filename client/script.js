@@ -105,7 +105,7 @@ const handleSubmit = async (e) => {
 
     if (response.status == 200) {
         const data = response.data();
-        console
+        console.info("data:", data)
         const parsedData = data.text.trim() // trims any trailing spaces/'\n' 
 
         typeText(messageDiv, parsedData)
